@@ -1,0 +1,24 @@
+section {
+  h6 {
+    font-size: 16px;
+  }
+  font-size: 15px;
+  .mat-card {
+    width: auto;
+    .flag {
+      height: 20px;
+      width: 33px;
+    }
+    .newCases {
+      color: #d32f2f;
+    }
+  }
+}
+@media (max-width: 768px) {
+  section {
+    font-size: 12px;
+    h6 {
+      font-size: 14px;
+    }
+  }
+}

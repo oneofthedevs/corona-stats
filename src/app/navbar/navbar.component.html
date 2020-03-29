@@ -1,1 +1,32 @@
-<p>navbar works!</p>
+<mat-toolbar class="bigscreen" color="primary">
+  <div class="container nav">
+    <h1 class="mat-title">
+      CoronaGo
+    </h1>
+    <div class="ml-auto">
+      <button mat-button routerLink="/">Home</button>
+      <button mat-button routerLink="/Details">
+        Details
+      </button>
+      <button mat-button routerLink="/credits">
+        Credits
+      </button>
+    </div>
+  </div>
+</mat-toolbar>
+<div class="smallscreen">
+  <mat-toolbar class="titlenav" color="primary">
+    <span>CoronaGo</span>
+  </mat-toolbar>
+  <mat-toolbar class="bottonnav" color="primary">
+    <div class="bottomnavdiv">
+      <button mat-button routerLink="/">Home</button>
+      <button mat-button routerLink="/Details">
+        Details
+      </button>
+      <button mat-button routerLink="/credits">
+        Credits
+      </button>
+    </div>
+  </mat-toolbar>
+</div>

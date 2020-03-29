@@ -1,0 +1,35 @@
+.nav {
+  display: flex;
+  width: 100%;
+}
+.smallscreen {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .bigscreen {
+    display: none;
+  }
+  .smallscreen {
+    display: block;
+    width: 100%;
+
+    .titlenav {
+      position: relative;
+      top: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .bottonnav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      justify-content: center;
+      z-index: 1000;
+    }
+  }
+}
