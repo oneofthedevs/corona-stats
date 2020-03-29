@@ -8,6 +8,7 @@ h4 {
 img {
   height: 250px;
   width: 250px;
+  border-radius: 50%;
   text-align: center;
 }
 .link {
@@ -56,5 +57,10 @@ img {
   &:hover {
     color: #053eff;
     transition: 0.3s;
+  }
+}
+@media (max-width: 767px) {
+  .special {
+    margin-bottom: 66px;
   }
 }
