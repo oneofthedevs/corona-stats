@@ -6,12 +6,12 @@ import { CreditsComponent } from "./credits/credits.component";
 
 const routes: Routes = [
   {
-    path: "Home",
+    path: "",
     component: HomeComponent
   },
   {
-    path: "",
-    redirectTo: "/Home",
+    path: "home",
+    redirectTo: "/",
     pathMatch: "full"
   },
   {
