@@ -12,6 +12,8 @@ import { DetailsComponent } from './details/details.component';
 import { CreditsComponent } from './credits/credits.component';
 import { FormsModule } from '@angular/forms';
 import { CountryComponent } from './country/country.component';
+import { ChartsModule } from 'ng2-charts';
+import { PieComponent } from './country/pie/pie.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { CountryComponent } from './country/country.component';
     HomeComponent,
     DetailsComponent,
     CreditsComponent,
-    CountryComponent
+    CountryComponent,
+    PieComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { CountryComponent } from './country/country.component';
     BrowserAnimationsModule,
     MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
