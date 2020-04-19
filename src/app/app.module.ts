@@ -11,13 +11,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { DetailsComponent } from './details/details.component';
 import { CreditsComponent } from './credits/credits.component';
 import { FormsModule } from '@angular/forms';
+import { CountryComponent } from './country/country.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
     DetailsComponent,
-    CreditsComponent
+    CreditsComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,

@@ -1,29 +1,44 @@
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
-import { HomeComponent } from "./home/home.component";
-import { DetailsComponent } from "./details/details.component";
-import { CreditsComponent } from "./credits/credits.component";
+import { CountryComponent } from './country/country.component';
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { DetailsComponent } from './details/details.component';
+import { CreditsComponent } from './credits/credits.component';
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     component: HomeComponent
   },
   {
-    path: "home",
-    redirectTo: "/",
-    pathMatch: "full"
+    path: 'home',
+    redirectTo: '/',
+    pathMatch: 'full'
   },
   {
-    path: "Details",
+    path: 'details',
     component: DetailsComponent
   },
   {
-    path: "credits",
+    path: 'credits',
     component: CreditsComponent
   },
   {
-    path: "**",
+    path: 'country/:name',
+    component: CountryComponent
+  },
+  {
+    path: 'Details',
+    redirectTo: '/details',
+    pathMatch: 'full'
+  },
+  {
+    path: 'country',
+    redirectTo: '/details',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
     component: HomeComponent
   }
 ];
@@ -32,4 +47,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

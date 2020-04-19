@@ -7,7 +7,8 @@
   </div> -->
   <div class="row">
     <div class="col-lg-4 col-md-6" *ngFor="let item of Alldata">
-      <mat-card class="text-center mt-1 mb-1 justify-content-center align-items-center">
+      <mat-card class="text-center mt-3 mb-2 justify-content-center align-items-center"
+        routerLink="/country/{{item.country}}" style="cursor: pointer;">
         <mat-card-title><img src="{{ item.countryInfo.flag }}" alt="CountryFlaag"
             class="flag" />&nbsp;{{ item.country }}</mat-card-title>
         <hr />

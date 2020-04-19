@@ -21,6 +21,15 @@
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   }
 
+
+  .mapdiv {
+    height: 70vh;
+    width: 100%;
+    .map {
+      height: 100%;
+      width: 100%;
+    }
+  }
   .live {
     height: 0.6rem;
     width: 0.6rem;
@@ -29,14 +38,6 @@
     display: inline-block;
     visibility: visible;
     animation: livekeys 0.7s infinite alternate;
-  }
-  .mapdiv {
-    height: 70vh;
-    width: 100%;
-    .map {
-      height: 100%;
-      width: 100%;
-    }
   }
 }
 @keyframes livekeys {

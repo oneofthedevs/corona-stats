@@ -1,0 +1,53 @@
+<section class="container">
+    <div class="d-flex justify-content-center align-items-center mt-4">
+        <img src="{{data.countryInfo.flag}}" alt="FlagImg" style="height: 25px;">
+        &nbsp;
+        <h1 class="text-center m-0">{{ data.country }}</h1>
+    </div>
+    <hr>
+    <div class="col-12 mt-3 mb-3 text-center">
+        <p>
+            <span class="live"></span>&nbsp;Last Updated:
+            {{ data.updated | date: "dd-MMM-yyyy, hh:mm a" | uppercase }}
+        </p>
+    </div>
+    <div class="row justify-content-around mt-4 text-center">
+        <div class="col-12 d-flex flex-column mb-4">
+            <h2 class="title_heading">Total Cases</h2>
+            <h4 class="values">{{ data.cases | number }}</h4>
+        </div>
+        <div class="col-md-4 d-flex flex-column">
+            <h2 class="title_heading">Current Active😷</h2>
+            <h4 class="values">{{ data.active | number }}</h4>
+        </div>
+        <div class="col-md-4 d-flex flex-column">
+            <h2 class="title_heading">Deaths💀</h2>
+            <h4 class="text-danger values">{{ data.deaths | number }}</h4>
+        </div>
+        <div class="col-md-4 d-flex flex-column">
+            <h2 class="title_heading">Recovered😀</h2>
+            <h4 class="text-success values">{{ data.recovered | number }}</h4>
+        </div>
+        <div class="col-md-12 d-flex justify-content-center mt-2 last">
+            <h4 class="values">Totals People tested💉: <b>{{ data.tests | number }}</b> i.e
+                <b>{{ data.testsPerOneMillion | number}}</b> per
+                millon</h4>
+        </div>
+        <!-- <div class="col-md-6">
+            <div class="doughnut">
+                <canvas id="myChart" width="400" height="400"></canvas>
+
+            </div>
+        </div> -->
+    </div>
+</section>
+
+
+<!-- <ng-template #notFound>
+    <section class="container">
+        <div class="d-flex justify-content-center align-content-center">
+            <h2 class="display-4">Sorry, Country Not Found</h2>
+            <button mat-button routerLink="/">Click here to go back to home</button>
+        </div>
+    </section>
+</ng-template> -->

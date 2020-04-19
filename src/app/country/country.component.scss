@@ -1,0 +1,56 @@
+.container{
+    h1 {
+        font-size: 1.8rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      h4 {
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 0.875rem;
+      }
+
+      .live {
+        height: 0.6rem;
+        width: 0.6rem;
+        background-color: #e53935;
+        border-radius: 50%;
+        display: inline-block;
+        visibility: visible;
+        animation: livekeys 0.7s infinite alternate;
+      }
+}
+@keyframes livekeys {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+@media (max-width: 768px) {
+    .container {
+      h1 {
+        font-size: 1.6rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+      }
+      h4 {
+        font-size: 1.2rem;
+      }
+      .live {
+        height: 0.6rem;
+        width: 0.6rem;
+      }
+      .mapdiv {
+        height: 38vh;
+      }
+      .last{
+          margin-bottom: 20px;
+      }
+    }
+  }
