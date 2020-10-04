@@ -1,37 +1,45 @@
 <div class="container">
-  <div class="row justify-content-around mt-4 text-center">
-    <h1>Around the World🌏</h1>
+  <div *ngIf="!allGood" class="col-12 mt-3 text-center">
+    <p>
+      <span class="live"></span>&nbsp;Site is currently down due to API being shut down
+    </p>
   </div>
-  <div class="row justify-content-around mt-4 text-center">
-    <div class="col-md-4 d-flex flex-column">
-      <h2 class="title_heading">Total Cases😷</h2>
-      <h4 class="values">{{ app.totalCases | number }}</h4>
+  <div *ngIf="allGood">
+    <div class="row justify-content-around mt-4 text-center">
+      <h1>Around the World🌏</h1>
     </div>
-    <div class="col-md-4 d-flex flex-column">
-      <h2 class="title_heading">Deaths💀</h2>
-      <h4 class="text-danger values">{{ app.totalDeaths | number }}</h4>
+    <div class="row justify-content-around mt-4 text-center">
+      <div class="col-md-4 d-flex flex-column">
+        <h2 class="title_heading">Total Cases😷</h2>
+        <h4 class="values">{{ app.totalCases | number }}</h4>
+      </div>
+      <div class="col-md-4 d-flex flex-column">
+        <h2 class="title_heading">Deaths💀</h2>
+        <h4 class="text-danger values">{{ app.totalDeaths | number }}</h4>
+      </div>
+      <div class="col-md-4 d-flex flex-column">
+        <h2 class="title_heading">Recovered😀</h2>
+        <h4 class="text-success values">{{ app.totalRecovered | number }}</h4>
+      </div>
+      <div class="col-12 mt-3">
+        <p>
+          <span class="live"></span>&nbsp;Last Updated:
+          {{ app.date | date: "dd-MMM-yyyy, hh:mm a" | uppercase }}
+        </p>
+      </div>
     </div>
-    <div class="col-md-4 d-flex flex-column">
-      <h2 class="title_heading">Recovered😀</h2>
-      <h4 class="text-success values">{{ app.totalRecovered | number }}</h4>
-    </div>
-    <div class="col-12 mt-3">
-      <p>
-        <span class="live"></span>&nbsp;Last Updated:
-        {{ app.date | date: "dd-MMM-yyyy, hh:mm a" | uppercase }}
+    <hr />
+    <div class="mapdiv">
+      <iframe src="https://www.google.com/maps/d/embed?mid=1a04iBi41DznkMaQRnICO40ktROfnMfMx" class="map"></iframe>
+      <p class="text-center source">
+        This map is ran by BNO News, however I am working on a new map that will
+        be out soon! Thank you for waiting
       </p>
     </div>
   </div>
-  <hr />
-  <div class="mapdiv">
-    <iframe src="https://www.google.com/maps/d/embed?mid=1a04iBi41DznkMaQRnICO40ktROfnMfMx" class="map"></iframe>
-    <p class="text-center source">
-      This map is ran by BNO News, however I am working on a new map that will
-      be out soon! Thank you for waiting
-    </p>
-  </div>
+  
   <div class="info mt-5">
-    <hr>
+    <hr *ngIf="allGood">
     <h2 class="text-center mt-5">
       What is COVID-19?
     </h2>
