@@ -14,4 +14,4 @@
     <li>Deploy</li>
 </ol>
 
-#### note: here in public directory, you have to write "dist/project_name" which is 'corona-app' in this case, not 'corona-stats'
+#### note: here in publish directory, you have to write "dist/project_name" which is 'corona-app' in this case, not 'corona-stats'
