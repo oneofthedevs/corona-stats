@@ -4,7 +4,36 @@
 
 <p> Live Version: <a href="https://covidgo.netlify.app" target="_blank"> Click here 🚀</a></p>
 
-### Steps to host this angular app on Netlify:
+
+![Corona Stats Homepage](./assets/dev.png "Homepage")
+
+## How to contribute
+
+* (Optional but advisable) Create an issue if you find any bug or want to improve something
+* Fork the repo
+* Clone the repo to your local machine
+
+ 
+```
+git clone http://github.com/<YOUR-USERNAME>/corona-stats
+```
+
+* Install node_modules
+```
+npm install
+```
+* Run the project
+
+```
+ng serve -o
+```
+* Make meaningful changes and write a understandable commit message
+* Push the changes and create a pull request
+
+
+
+
+## Steps to host this angular app on Netlify:
 
 <ol>
     <li>Goto netlify, click New Site From Git</li>
