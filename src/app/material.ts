@@ -4,17 +4,19 @@ import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
 import { MatTableModule } from "@angular/material/table";
+import { MatInputModule } from "@angular/material/input";
 
 const MaterialComponents = [
   MatButtonModule,
   MatToolbarModule,
   MatIconModule,
   MatCardModule,
-  MatTableModule
+  MatTableModule,
+  MatInputModule,
 ];
 
 @NgModule({
   imports: [MaterialComponents],
-  exports: [MaterialComponents]
+  exports: [MaterialComponents],
 })
 export class MaterialModule {}
